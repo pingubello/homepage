@@ -1,0 +1,51 @@
+.program-header {
+  background-color: #ffb02e;
+  font-size: 21px;
+}
+
+.program-list {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.program-text,
+.program-header {
+  padding: 30px 100px;
+}
+
+.program-time {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  text-align: end;
+  font-weight: 500;
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .program-text,
+  .program-header,
+  .program-time {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .program-list {
+    grid-template-columns: 1fr;
+  }
+
+  .program-text,
+  .program-header,
+  .program-time {
+    padding: 30px 40px;
+  }
+
+  .program-time {
+    padding-top: 0;
+  }
+}

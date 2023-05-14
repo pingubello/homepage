@@ -1,0 +1,256 @@
+header {
+  background-color: #ffb02e;
+  position: sticky;
+  top: 0;
+  z-index: 16;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  padding: 0 50px;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  border-bottom: solid 15px #ffe9c6;
+  overflow: hidden;
+}
+
+.nav-list .nav-item {
+  position: relative;
+  padding: 30px 0;
+}
+
+.nav-list .nav-item a {
+  font-weight: 500;
+  padding: 16px 0;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav-list .nav-item.active a,
+.nav-list .nav-item a:hover {
+  color: #000;
+}
+
+.nav-list .nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffe9c6;
+  height: 0;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.nav-list .nav-item.active a::after {
+  height: 35px;
+  animation: none !important;
+}
+
+.nav-list .nav-item a:hover::after {
+  height: 35px;
+  animation: nav-item-wobble 0.7s;
+}
+
+@keyframes nav-item-wobble {
+  0% {
+    height: 0;
+  }
+  30% {
+    height: 38px;
+  }
+  50% {
+    height: 32px;
+  }
+  70% {
+    height: 36px;
+  }
+  100% {
+    height: 35px;
+  }
+}
+
+.nav-list .logo-container {
+  grid-column: 4;
+}
+
+li {
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.logo-container img {
+  width: 100px;
+  height: 80px;
+}
+
+.logo-container.mobile {
+  display: none;
+}
+
+.menu-toggle {
+  position: relative;
+}
+
+.menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 22; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+.menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.menu-toggle span {
+  display: none;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #232323;
+  border-radius: 3px;
+
+  z-index: 21;
+
+  transform-origin: 4px 0;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
+}
+
+.menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+footer {
+  background-color: #ffb02e;
+  text-align: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-list {
+    padding: 0 0;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-list .logo-container {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-top: 20px;
+  }
+
+  .nav-list .nav-item {
+    grid-row: 2;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .logo-container.mobile {
+    display: block;
+    z-index: 17;
+  }
+
+  .logo-container.mobile img {
+    height: 60px;
+    width: auto;
+  }
+
+  .nav-list {
+    z-index: 16;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 95px 20px 30px 20px; /* Leave space for navbar */
+    border: none;
+    background-color: #ffb02e;
+
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav-list .nav-item.active a {
+    color: #fff;
+  }
+
+  .menu-toggle input:checked ~ .nav-list {
+    transform: none;
+  }
+
+  .menu-toggle span {
+    display: block;
+  }
+
+  .nav-list .nav-item {
+    padding: 5px 30px;
+  }
+
+  .nav-list .nav-item a::after {
+    display: none;
+  }
+
+  .nav-list .logo-container {
+    display: none;
+  }
+}

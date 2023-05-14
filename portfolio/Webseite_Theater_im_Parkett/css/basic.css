@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  src: url("../fonts/FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  src: url("../fonts/FiraSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 500;
+  src: url("../fonts/AlegreyaSansSC-Medium.ttf") format("truetype");
+}
+
+body {
+  background-color: #ffd696;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  width: 100%;
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-top: 16px;
+  display: block;
+}
+
+.title {
+  display: block;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.background-light {
+  background-color: #ffd696;
+}
+
+.background-lighter {
+  background-color: #ffe9c6;
+}

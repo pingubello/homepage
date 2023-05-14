@@ -1,0 +1,290 @@
+.slider {
+  width: 100%;
+  height: 800px;
+  background-color: #ff9f01;
+  overflow: hidden;
+  position: relative;
+}
+
+.bild {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 20s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  height: 100%;
+  z-index: 0;
+}
+
+.bild1 {
+  background-image: url(../bilder/Alte_Dame_1_orig.jpg);
+  animation-name: slider1;
+}
+
+.text-slider {
+  z-index: 15;
+  position: absolute;
+  top: 25%;
+  padding: 10px 30px;
+  max-width: 580px;
+  animation-duration: 20s;
+  animation-delay: -2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #fff;
+  font-family: Alegreya Sans;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+  .text-slider {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text-slider {
+    top: 15%;
+    left: 50% !important;
+    right: unset !important;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 70%;
+  }
+}
+
+.text-slider1 {
+  animation-name: text1;
+}
+
+.bild2 {
+  background-image: url(../bilder/Buehne_4.jpg);
+  animation-name: slider2;
+}
+
+.text-slider2 {
+  animation-name: text2;
+  top: 22%;
+}
+
+.bild3 {
+  background-image: url(../bilder/Alte_Dame_1.jpg);
+  animation-name: slider3;
+}
+
+.text-slider3 {
+  animation-name: text3;
+}
+
+.bild4 {
+  background-image: url(../bilder/Gesang_1.jpg);
+  animation-name: slider4;
+}
+
+.text-slider4 {
+  animation-name: text4;
+}
+
+.bild5 {
+  background-image: url(../bilder/Zuschauer_3.jpg);
+  animation-name: slider5;
+}
+
+.text-slider5 {
+  animation-name: textfuenf;
+  top: 35%;
+}
+
+@keyframes slider1 {
+  0% {
+    right: -100%;
+  }
+  10%,
+  20% {
+    z-index: 10;
+    right: 0;
+  }
+  30% {
+    right: 100%;
+  }
+}
+
+@keyframes slider2 {
+  0%,
+  20% {
+    right: -100%;
+  }
+  30%,
+  40% {
+    z-index: 10;
+    right: 0;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes slider3 {
+  0%,
+  40% {
+    right: -100%;
+  }
+  50%,
+  60% {
+    z-index: 10;
+    right: 0;
+  }
+  70%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes slider4 {
+  0%,
+  60% {
+    right: -100%;
+  }
+  70%,
+  80% {
+    z-index: 10;
+    right: 0;
+  }
+  90%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes slider5 {
+  80% {
+    right: -100%;
+  }
+  90%,
+  100% {
+    z-index: 10;
+    right: 0;
+  }
+  10%,
+  79.9999% {
+    right: 100%;
+  }
+}
+
+@keyframes text1 {
+  0%,
+  5% {
+    opacity: 0%;
+    right: 20%;
+  }
+  10% {
+    opacity: 100%;
+    right: 24%;
+  }
+  20% {
+    opacity: 100%;
+    right: 28%;
+  }
+  25% {
+    opacity: 0%;
+    right: 32%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text2 {
+  0%,
+  25% {
+    opacity: 0;
+    left: 24%;
+  }
+  30% {
+    opacity: 100%;
+    left: 28%;
+  }
+  40% {
+    opacity: 100%;
+    left: 32%;
+  }
+  45% {
+    opacity: 0;
+    left: 36%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text3 {
+  0%,
+  45% {
+    opacity: 0%;
+    right: 20%;
+  }
+  50% {
+    opacity: 100%;
+    right: 24%;
+  }
+  60% {
+    opacity: 100%;
+    right: 28%;
+  }
+  65% {
+    opacity: 0%;
+    right: 32%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text4 {
+  0%,
+  65% {
+    opacity: 0;
+    left: 24%;
+  }
+  70% {
+    opacity: 100%;
+    left: 28%;
+  }
+  80% {
+    opacity: 100%;
+    left: 32%;
+  }
+  85% {
+    opacity: 0;
+    left: 36%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textfuenf {
+  5.001%,
+  85% {
+    opacity: 0%;
+    right: 20%;
+  }
+  90% {
+    opacity: 100%;
+    right: 24%;
+  }
+  100%,
+  0% {
+    opacity: 100%;
+    right: 28%;
+  }
+  5% {
+    opacity: 0%;
+    right: 32%;
+  }
+}

@@ -1,0 +1,52 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contentbox {
+  align-self: center;
+  justify-self: center;
+  padding: 60px 100px;
+}
+
+.imagebox {
+  background-color: #ffe9c6;
+  padding: 5%;
+}
+
+.imagebox img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1201px) {
+  /* Switch order for second row in desktop only */
+  .imagebox2 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .contentbox2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .contentbox,
+  .imagebox {
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contentbox,
+  .imagebox {
+    padding: 40px;
+  }
+}
