@@ -273,7 +273,7 @@ li.timeline-event:hover .timeline-event-date {
   font-family: Tajawal, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1.5;
 }
 
 .elementheight {
@@ -369,7 +369,13 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 
   .huge-text {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .image {
+    /* Two thirds of the screen minus header */
+    height: calc(66vh - 60px);
   }
 
   .elementheight {
@@ -390,6 +396,65 @@ a.portfolio-link:hover .portfolio-text-holder {
 
   .order-sm-2 {
     order: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .timeline-container {
+    padding: 3.5rem 2rem;
+  }
+
+  li.timeline-event {
+    margin-left: 0;
+  }
+
+  .timeline-event::before {
+    display: none;
+  }
+
+  .timeline-circle {
+    display: none;
+  }
+
+  .timeline-event-date {
+    left: 15px;
+  }
+
+  li.timeline-event:hover .timeline-event-date {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .huge-text {
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-container {
+    padding: 3.5rem 4rem;
+  }
+
+  ul.timeline-holder {
+    padding-left: 0;
+  }
+
+  .timeline-holder .headlines {
+    margin-bottom: 12px;
+  }
+
+  .timeline-event {
+    padding-top: 1.5rem;
+  }
+
+  .timeline-event-content {
+    margin-left: 0;
+  }
+
+  .timeline-event-date {
+    transform: none;
+    top: 0;
+    left: 0;
   }
 }
 
