@@ -116,11 +116,25 @@ footer {
   justify-content: center;
 }
 
+.align-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .huge-text {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 3.5rem;
+}
+
+.main-text {
+  line-height: 1.5rem;
+}
+
+.text-white {
+  color: var(--background);
 }
 
 .p-8 {
@@ -161,14 +175,11 @@ h2 {
   font-weight: 400;
 }
 
-.text-white {
-  color: var(--background);
-}
-
-.fließtext {
-  font-family: Tajawal, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5rem;
+.signature {
+  height: 60px;
+  width: auto;
+  margin-top: 35px;
+  margin-right: 5px;
 }
 
 ul.timeline-holder {
