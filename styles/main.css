@@ -391,7 +391,7 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 
   .p-sm-4 {
-    padding: 3.5rem 4rem;
+    padding: 3.5rem;
   }
 
   .order-sm-2 {
@@ -400,6 +400,10 @@ a.portfolio-link:hover .portfolio-text-holder {
 }
 
 @media screen and (max-width: 640px) {
+    .p-sm-4 {
+    padding: 3rem;
+  }
+  
   .timeline-container {
     padding: 3.5rem 2rem;
   }
@@ -432,7 +436,7 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 
   .timeline-container {
-    padding: 3.5rem 4rem;
+    padding: 3rem;
   }
 
   ul.timeline-holder {
