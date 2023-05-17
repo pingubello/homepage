@@ -380,6 +380,8 @@ a.portfolio-link:hover .portfolio-text-holder {
 
   .elementheight {
     height: 120px;
+    justify-content: start;
+    padding: 0 3.5rem;
   }
 
   .col.col-33 {
@@ -402,6 +404,10 @@ a.portfolio-link:hover .portfolio-text-holder {
 @media screen and (max-width: 640px) {
     .p-sm-4 {
     padding: 3rem;
+  }
+  
+  .elementheight {
+    padding: 0 3rem;
   }
   
   .timeline-container {
@@ -458,7 +464,7 @@ a.portfolio-link:hover .portfolio-text-holder {
   .timeline-event-date {
     transform: none;
     top: 0;
-    left: 0;
+    left: 0 !important;
   }
 }
 
