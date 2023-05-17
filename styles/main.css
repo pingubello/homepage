@@ -94,7 +94,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
   transition: background-image 0.15s ease-in-out;
 }
 
