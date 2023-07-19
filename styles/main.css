@@ -12,30 +12,6 @@
   --hair: #634944;
 }
 
-@font-face {
-  font-family: Tajawal;
-  src: url(../fonts/Tajawal-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Tajawal;
-  src: url(../fonts/Tajawal-Bold.ttf) format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Tajawal;
-  src: url(../fonts/Tajawal-Light.ttf) format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
-  font-weight: 400;
-}
-
 b {
   font-weight: 700;
 }
@@ -401,14 +377,14 @@ a.portfolio-link:hover .portfolio-text-holder {
 }
 
 @media screen and (max-width: 640px) {
-    .p-sm-4 {
+  .p-sm-4 {
     padding: 3rem;
   }
-  
+
   .elementheight {
     padding: 0 3rem;
   }
-  
+
   .timeline-container {
     padding: 3.5rem 2rem;
   }
