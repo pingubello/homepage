@@ -12,20 +12,30 @@
     <link rel="preload" as="image" href="img/bild2.webp" />
   </head>
 
-  <body>
-    <header>
-      <div class="header-left">
-        <div class="title">
+  <body class="bg-background text-[18px] text-hair">
+    <header class="xl:h-[55px]">
+      <div
+        class="header-left xl:fixed xl:left-1/2 xl:top-0 xl:!z-[99] xl:!w-[1150px] xl:-translate-x-1/2"
+      >
+        <div
+          class="title xl:fixed xl:-left-[55px] xl:top-[300px] xl:origin-top-left xl:-rotate-90"
+        >
           <a href="index.html">Christoph Heigl</a>
         </div>
       </div>
     </header>
-    <main>
-      <div class="row">
-        <div class="col col-33 image"></div>
-        <div class="col col-66 bg-dark center-content">
-          <div class="p-sm-4 p-md-6 p-8">
-            <h1 class="huge-text">Hallo!<br />Ich bin<br />Christoph,</h1>
+    <main class="relative mx-auto max-w-[1150px]">
+      <div class="flex w-full flex-wrap">
+        <div
+          class="relative flex h-[calc(66vh_-_60px)] w-full bg-[url('../img/bild1.webp')] bg-cover bg-center bg-no-repeat hover:bg-[url('../img/bild2.webp')] motion-safe:transition-background-image motion-safe:duration-150 md:h-[740px] md:w-1/3 xl:h-auto"
+        ></div>
+        <div
+          class="center-content relative flex w-full bg-dark-background md:w-2/3"
+        >
+          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
+            <h1 class="huge-text font-display">
+              Hallo!<br />Ich bin<br />Christoph,
+            </h1>
             <span class="main-text">
               ein
               <b>Mediengestalter (Digital und Print)</b>
@@ -45,12 +55,18 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col col-33 bg-accent-1 center-content elementheight">
-          <h2 class="text-white">Über mich</h2>
+      <div class="flex w-full flex-wrap">
+        <div
+          class="center-content elementheight relative flex w-full bg-pullover md:w-1/3"
+        >
+          <h2 class="font-display text-background">Über mich</h2>
         </div>
-        <div class="col col-66 center-content bg-accent-2">
-          <div class="p-sm-4 p-md-6 align-right p-8">
+        <div
+          class="center-content relative flex w-full bg-light-background md:w-2/3"
+        >
+          <div
+            class="align-right p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28"
+          >
             <div class="main-text">
               Ich bin ein zuverlässiger und ambitionierter Mensch, der großes
               Interesse daran hat, Kunden in der Gestaltung und im
@@ -74,14 +90,20 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col col-66 order-sm-2 bg-accent-4 center-content">
-          <div class="p-sm-4 p-md-6 timeline-container p-8">
+      <div class="flex w-full flex-wrap">
+        <div
+          class="order-sm-2 center-content relative flex w-full bg-dark-background md:w-2/3"
+        >
+          <div
+            class="timeline-container p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28"
+          >
             <ul class="timeline-holder">
               <li class="timeline-event">
                 <span class="timeline-circle"></span>
                 <div class="timeline-event-content">
-                  <div class="headlines">Ausbildung zum Mediengestalter</div>
+                  <div class="mb-3 font-bold leading-normal xs:mb-0">
+                    Ausbildung zum Mediengestalter
+                  </div>
                   <span class="main-text"
                     >an der MiB-Akademie in München. Abschluss vorraussichtlich
                     im Herbst 2025.</span
@@ -92,7 +114,9 @@
               <li class="timeline-event">
                 <span class="timeline-circle"></span>
                 <div class="timeline-event-content">
-                  <div class="headlines">Ausbildung zum Erzieher</div>
+                  <div class="mb-3 font-bold leading-normal xs:mb-0">
+                    Ausbildung zum Erzieher
+                  </div>
                   <span class="main-text"
                     >an der Fachschule für Sozialpädagogik in Stuttgart.
                     Vorzeitig beendet.</span
@@ -103,7 +127,9 @@
               <li class="timeline-event">
                 <span class="timeline-circle"></span>
                 <div class="timeline-event-content">
-                  <div class="headlines">Bundesfreiwilligendienst</div>
+                  <div class="mb-3 font-bold leading-normal xs:mb-0">
+                    Bundesfreiwilligendienst
+                  </div>
                   <span class="main-text"
                     >im Kindergarten St. Joseph in Deggendorf.</span
                   >
@@ -113,7 +139,9 @@
               <li class="timeline-event">
                 <span class="timeline-circle"></span>
                 <div class="timeline-event-content">
-                  <div class="headlines">Fachoberschule</div>
+                  <div class="mb-3 font-bold leading-normal xs:mb-0">
+                    Fachoberschule
+                  </div>
                   <span class="main-text">
                     im Bereich Gestaltung in Straubing. <br />Abschluss:
                     Fachhochschulreife.</span
@@ -124,84 +152,106 @@
             </ul>
           </div>
         </div>
-        <div class="col col-33 center-content elementheight bg-accent-3">
-          <h2 class="text-white">Werdegang</h2>
+        <div
+          class="center-content elementheight relative flex w-full bg-dark-green md:w-1/3"
+        >
+          <h2 class="font-display text-background">Werdegang</h2>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col col-33 center-content elementheight bg-accent-5">
-          <h2 class="text-white">Portfolio</h2>
+      <div class="flex w-full flex-wrap">
+        <div
+          class="center-content elementheight relative flex w-full bg-wall md:w-1/3"
+        >
+          <h2 class="font-display text-background">Portfolio</h2>
         </div>
-        <div class="col col-33 bg-accent-2">
+        <div class="relative flex w-full bg-light-background md:w-1/3">
           <a
             href="portfolio/Webseite_Theater_im_Parkett/index.html"
-            class="w-100 portfolio-link"
+            class="group relative w-full overflow-hidden hover:translate-y-0"
           >
-            <div class="portfolio-image portfolio-image1 w-100"></div>
-            <div class="portfolio-text-holder">
-              <p class="headlines">Theater im Parkett</p>
+            <div
+              class="h-[400px] w-full bg-[url('../img/Website_TiP.jpg')] bg-cover bg-top bg-no-repeat shadow-[inset_0_0_0_1000px_#858b829c] hover:shadow-[inset_0_0_0_1000px_transparent] active:shadow-[inset_0_0_0_1000px_transparent] motion-safe:transition-shadow motion-safe:duration-300"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 z-[1] translate-y-full bg-dark-background px-10 py-5 text-xl group-hover:translate-y-0 motion-safe:transition-transform motion-safe:duration-300"
+            >
+              <p class="font-bold leading-normal">Theater im Parkett</p>
               <p class="portfolio-cat">Projektarbeit, Webseite</p>
             </div>
           </a>
         </div>
 
-        <div class="col col-33 bg-accent-2">
+        <div class="relative flex w-full bg-light-background md:w-1/3">
           <a
             href="portfolio/Gruenkram_Broschuere.pdf"
-            class="w-100 portfolio-link"
+            class="group relative w-full overflow-hidden hover:translate-y-0"
           >
-            <div class="portfolio-image portfolio-image2 w-100"></div>
-            <div class="portfolio-text-holder">
-              <p class="headlines">Grünkram Gemüsehof</p>
+            <div
+              class="h-[400px] w-full bg-[url('../img/Gruenkram.png')] bg-cover bg-center bg-no-repeat shadow-[inset_0_0_0_1000px_#858b829c] hover:shadow-[inset_0_0_0_1000px_transparent] active:shadow-[inset_0_0_0_1000px_transparent] motion-safe:transition-shadow motion-safe:duration-300"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 z-[1] translate-y-full bg-dark-background px-10 py-5 text-xl group-hover:translate-y-0 motion-safe:transition-transform motion-safe:duration-300"
+            >
+              <p class="font-bold leading-normal">Grünkram Gemüsehof</p>
               <p class="portfolio-cat">Projektarbeit, Broschüre</p>
             </div>
           </a>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col col-66 order-sm-2 bg-accent-2">
-          <div class="p-sm-4 p-md-6 p-8">
+      <div class="flex w-full flex-wrap">
+        <div
+          class="order-sm-2 relative flex w-full bg-light-background md:w-2/3"
+        >
+          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
             <span class="main-text">
               <p class="mb-2">
-                <span class="headlines">Adobe-Programme:</span><br />
+                <span class="font-bold leading-normal">Adobe-Programme:</span
+                ><br />
                 Grundlagen in InDesign, Photoshop, Illustrator, Acrobat,
                 Dimension und Premiere
               </p>
               <p class="mb-2">
-                <span class="headlines">Webseiten:</span><br />
+                <span class="font-bold leading-normal">Webseiten:</span><br />
                 Grundlagen in HTML, CSS, PHP, MySQL, JavaScript
               </p>
               <p>
-                <span class="headlines">Sonstiges:</span><br />
+                <span class="font-bold leading-normal">Sonstiges:</span><br />
                 Grundlagen im Erstellen von Konzeptionen, typografischer
                 Gestaltung, Erstellen von Styleguides
               </p>
             </span>
           </div>
         </div>
-        <div class="col col-33 bg-accent-1 elementheight center-content">
-          <h2 class="text-white">Fähigkeiten</h2>
+        <div
+          class="elementheight center-content relative flex w-full bg-pullover md:w-1/3"
+        >
+          <h2 class="font-display text-background">Fähigkeiten</h2>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col col-33 bg-accent-3 elementheight center-content">
-          <h2 class="text-white">Kontakt</h2>
+      <div class="flex w-full flex-wrap">
+        <div
+          class="elementheight center-content relative flex w-full bg-dark-green md:w-1/3"
+        >
+          <h2 class="font-display text-background">Kontakt</h2>
         </div>
-        <div class="col col-66 bg-accent-4">
-          <div class="p-sm-4 p-md-6 p-8">
+        <div class="relative flex w-full bg-dark-background md:w-2/3">
+          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
             <span class="main-text">
-              <span class="headlines">E-Mail:</span><br /><a
-                href="mailto:chris-heigl@gmx.de"
-                >chris-heigl@gmx.de</a
-              ><br /><br />
+              <span class="font-bold leading-normal">E-Mail:</span><br />
+              <a href="mailto:chris-heigl@gmx.de" class="text-pullover">
+                chris-heigl@gmx.de
+              </a>
+              <br /><br />
             </span>
           </div>
         </div>
       </div>
     </main>
-    <footer>© 2023 Christoph Heigl</footer>
+    <footer class="p-8 text-center xl:px-8 xl:pb-16 xl:pt-24">
+      © 2023 Christoph Heigl
+    </footer>
   </body>
 </html>

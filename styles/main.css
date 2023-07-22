@@ -2,30 +2,7 @@
   --background: #ffefd3;
   --dark-background: #f3debd;
   --dark-green: #183a37;
-  --orange: #c44900;
-  --dark-purple: #432534;
-  --text: #04151f;
-  --wall: #858b82;
-  --pullover: #794323;
-  --jacket: #cfcbb7;
-  --light-background: #fff6e8;
   --hair: #634944;
-}
-
-b {
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: var(--pullover);
-}
-
-body {
-  background-color: var(--background);
-  color: var(--hair);
-  font-family: Tajawal, Arial, Helvetica, sans-serif;
-  font-size: 18px;
 }
 
 .header-left .title a {
@@ -35,54 +12,6 @@ body {
   font-weight: 700;
   letter-spacing: 5px;
   color: var(--hair);
-}
-
-main {
-  max-width: 1150px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-}
-
-footer {
-  text-align: center;
-  padding: 90px 30px 60px;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  position: relative;
-  min-height: 1px;
-  display: flex;
-}
-
-.col.col-33 {
-  width: 33.333%;
-}
-
-.image {
-  background-image: url(../img/bild1.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 0.15s ease-in-out;
-}
-
-.image:hover {
-  background-image: url(../img/bild2.webp);
-}
-
-.col.col-66 {
-  width: 66.666%;
-}
-
-.bg-dark {
-  background-color: var(--dark-background);
 }
 
 .center-content {
@@ -98,7 +27,6 @@ footer {
 }
 
 .huge-text {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 3.5rem;
@@ -108,44 +36,7 @@ footer {
   line-height: 1.5rem;
 }
 
-.text-white {
-  color: var(--background);
-}
-
-.p-8 {
-  padding: 7rem 8rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.bg-accent-1 {
-  background-color: var(--pullover);
-}
-
-.bg-accent-2 {
-  background-color: var(--light-background);
-}
-
-.bg-accent-3 {
-  background-color: var(--dark-green);
-}
-
-.bg-accent-4 {
-  background-color: var(--dark-background);
-}
-
-.bg-accent-5 {
-  background-color: var(--wall);
-}
-
 h2 {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 400;
 }
@@ -244,66 +135,11 @@ li.timeline-event:hover .timeline-event-date {
   margin-left: 42px;
 }
 
-.headlines {
-  font-family: Tajawal, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
 .elementheight {
   max-height: 250px;
 }
 
-.portfolio-image {
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 400px;
-  box-shadow: inset 0 0 0 1000px #858b829c;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.portfolio-image1 {
-  background-image: url(../img/Website_TiP.jpg);
-}
-
-.portfolio-image2 {
-  background-image: url(../img/Gruenkram.png);
-  background-position: center;
-}
-
-.portfolio-image:hover,
-.portfolio-image:active {
-  box-shadow: inset 0 0 0 1000px transparent;
-}
-
-.portfolio-image2:hover,
-.portfolio-image2:active {
-  box-shadow: inset 0 0 0 1000px transparent;
-}
-
-.portfolio-text-holder {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  font-size: 20px;
-  background-color: var(--dark-background);
-  padding: 20px 40px;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-a.portfolio-link {
-  overflow: hidden;
-  position: relative;
-}
-
-a.portfolio-link:hover .portfolio-text-holder {
-  transform: translateY(0);
-}
-
+/* gilt bis xl */
 @media screen and (max-width: 1300px) {
   h2 {
     font-size: 2.5rem;
@@ -324,20 +160,9 @@ a.portfolio-link:hover .portfolio-text-holder {
   .elementheight {
     height: 180px;
   }
-
-  .p-md-6 {
-    padding: 4.5rem 5.5rem;
-  }
-
-  .image {
-    height: 740px;
-  }
-
-  footer {
-    padding: 30px;
-  }
 }
 
+/* gilt bis md */
 @media screen and (max-width: 840px) {
   h2 {
     font-size: 2rem;
@@ -348,27 +173,10 @@ a.portfolio-link:hover .portfolio-text-holder {
     margin-bottom: 2.5rem;
   }
 
-  .image {
-    /* Two thirds of the screen minus header */
-    height: calc(66vh - 60px);
-  }
-
   .elementheight {
     height: 120px;
     justify-content: start;
     padding: 0 3.5rem;
-  }
-
-  .col.col-33 {
-    width: 100%;
-  }
-
-  .col.col-66 {
-    width: 100%;
-  }
-
-  .p-sm-4 {
-    padding: 3.5rem;
   }
 
   .order-sm-2 {
@@ -376,11 +184,8 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 }
 
+/* gilt bis sm */
 @media screen and (max-width: 640px) {
-  .p-sm-4 {
-    padding: 3rem;
-  }
-
   .elementheight {
     padding: 0 3rem;
   }
@@ -410,6 +215,7 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 }
 
+/* gilt bis xs */
 @media screen and (max-width: 500px) {
   .huge-text {
     font-size: 2.75rem;
@@ -422,10 +228,6 @@ a.portfolio-link:hover .portfolio-text-holder {
 
   ul.timeline-holder {
     padding-left: 0;
-  }
-
-  .timeline-holder .headlines {
-    margin-bottom: 12px;
   }
 
   .timeline-event {
@@ -443,25 +245,15 @@ a.portfolio-link:hover .portfolio-text-holder {
   }
 }
 
-@media screen and (min-width: 1301px) {
-  header {
-    height: 55px;
-  }
+/* gilt bis xl 
+@media screen and (max-width: 1300px)
 
-  .header-left {
-    position: fixed;
-    z-index: 99 !important;
-    width: 1150px !important;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-  }
+/* gilt bis md 
+@media screen and (max-width: 840px)
 
-  .header-left .title {
-    position: fixed;
-    transform-origin: 0 0;
-    top: 300px;
-    left: -55px;
-    transform: rotate(-90deg);
-  }
-}
+/* gilt bis sm 
+@media screen and (max-width: 640px)
+
+/* gilt bis xs 
+@media screen and (max-width: 500px)
+*/
