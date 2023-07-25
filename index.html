@@ -4,168 +4,275 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lebenslauf | Christoph Heigl</title>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>Home | Christoph Heigl</title>
     <link rel="stylesheet" href="styles/output.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="preload" as="image" href="img/bild2.webp" />
+    <script>
+      function validatePassword() {
+        const form = document.querySelector("form");
+        if (!form.checkValidity()) {
+          var tmpSubmit = document.createElement("button");
+          form.appendChild(tmpSubmit);
+          tmpSubmit.click();
+          form.removeChild(tmpSubmit);
+        } else {
+          const password = form["password"].value;
+          if (password === "hQw1!Z2_lp") {
+            document.getElementById("passwordArea").style.display = "none";
+            document
+              .querySelectorAll(".portfolio-item")
+              .forEach((item) => (item.style.display = "flex"));
+          } else {
+            alert("Falsches Passwort!");
+          }
+        }
+      }
+    </script>
   </head>
 
   <body class="bg-background text-[18px] text-hair">
-    <header class="xl:h-[55px]">
+    <header
+      class="sticky top-0 z-[1] bg-background px-[1.5rem] pb-[1rem] pt-[1.5rem] xl:static xl:h-[55px]"
+    >
       <div
         class="header-left xl:fixed xl:left-1/2 xl:top-0 xl:!z-[99] xl:!w-[1150px] xl:-translate-x-1/2"
       >
         <div
-          class="title xl:fixed xl:-left-[55px] xl:top-[300px] xl:origin-top-left xl:-rotate-90"
+          class="title xl:fixed xl:-left-[55px] xl:top-[282px] xl:origin-top-left xl:-rotate-90"
         >
-          <a href="index.html">Christoph Heigl</a>
+          <a
+            href="index.html"
+            class="text-xl font-bold uppercase tracking-[5px] text-hair no-underline"
+          >
+            Christoph Heigl
+          </a>
         </div>
       </div>
     </header>
     <main class="relative mx-auto max-w-[1150px]">
       <div class="flex w-full flex-wrap">
         <div
-          class="relative flex h-[calc(66vh_-_60px)] w-full bg-[url('../img/bild1.webp')] bg-cover bg-center bg-no-repeat hover:bg-[url('../img/bild2.webp')] motion-safe:transition-background-image motion-safe:duration-150 md:h-[740px] md:w-1/3 xl:h-auto"
+          class="relative flex h-[calc(66vh_-_60px)] w-full bg-[url('../img/bild1.webp')] bg-cover bg-center bg-no-repeat hover:bg-[url('../img/bild2.webp')] motion-safe:transition-background-image motion-safe:duration-150 sm:h-[780px] md:h-auto md:w-1/3"
         ></div>
         <div
-          class="center-content relative flex w-full bg-dark-background md:w-2/3"
+          class="relative flex w-full items-center justify-center bg-dark-background md:w-2/3"
         >
-          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
-            <h1 class="huge-text font-display">
+          <div class="p-8 xs:p-12 sm:p-14 md:p-16 lg:px-32 lg:py-28">
+            <h1
+              class="mb-8 font-display text-[2.75rem] font-normal leading-tight xs:mb-10 xs:text-[3.5rem] md:mb-14 md:text-[5rem]"
+            >
               Hallo!<br />Ich bin<br />Christoph,
             </h1>
-            <span class="main-text">
+            <span class="leading-6">
               ein
-              <b>Mediengestalter (Digital und Print)</b>
-              in Ausbildung an der MiB Akademie in München. Ich biete folgende
-              Leistungen an:
+              <b>Mediengestalter Digital & Print</b>
+              in Ausbildung an der MiB Akademie in München. Die von mir
+              angebotenen Leistungen beinhalten die Gestaltung und Umsetzung
+              von:
               <br />
-              Gestaltung und Umsetzung von Webauftritten
               <br />
-              Gestaltung und Drucken von Visitenkarten
-              <br />
-              Gestaltung von Logos
-              <br />
-              Gestaltung der Geschäftsausstattung
-              <br />
+              <ul class="list-disc pl-[14px]">
+                <li>Websites</li>
+
+                <li>Visitenkarten</li>
+
+                <li>Plakaten</li>
+
+                <li>Broschüren</li>
+
+                <li>Logos</li>
+              </ul>
             </span>
+            <a
+              href="kontakt.html"
+              class="mt-8 inline-block font-bold hover:translate-x-2 motion-safe:transition-transform motion-safe:duration-300"
+            >
+              &rarr; Hier zum Kontakt
+            </a>
           </div>
         </div>
       </div>
 
       <div class="flex w-full flex-wrap">
         <div
-          class="center-content elementheight relative flex w-full bg-pullover md:w-1/3"
+          class="flex h-[120px] max-h-[250px] w-full items-center justify-start bg-pullover px-8 xs:px-12 sm:px-14 md:relative md:h-[180px] md:max-h-[120px] md:w-1/3 md:justify-center xl:h-auto xl:max-h-[180px]"
         >
-          <h2 class="font-display text-background">Über mich</h2>
+          <h2
+            class="whitespace-nowrap font-display text-[2rem] font-normal text-background md:text-[2.5rem] xl:text-[3rem]"
+          >
+            Über mich
+          </h2>
         </div>
         <div
-          class="center-content relative flex w-full bg-light-background md:w-2/3"
+          class="relative flex w-full items-center justify-center bg-light-background md:w-2/3"
         >
           <div
-            class="align-right p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28"
+            class="flex flex-col items-end p-8 xs:p-12 sm:p-14 md:p-16 lg:px-32 lg:py-28"
           >
-            <div class="main-text">
+            <div class="leading-6">
               Ich bin ein zuverlässiger und ambitionierter Mensch, der großes
               Interesse daran hat, Kunden in der Gestaltung und im
-              Entstehungsprozess von Webseiten und anderen Produkten zu
+              Entstehungsprozess von Websites und anderen Produkten zu
               begleiten. Mir fällt es leicht, auf Wünsche und Ideen einzugehen
-              und diese umzusetzen. Meine Arbeitsweise ist Lösungsorientiert und
-              zielgerichtet. Dabei bin ich stets fokussiert und gehe detailgenau
-              vor. Zudem kann ich gut mit konstruktiver Kritik umgehen und
-              arbeite stets daran mich weiterzubilden. <br /><br />
+              und diese umzusetzen. <br /><br />Meine Arbeitsweise ist
+              lösungsorientiert und zielgerichtet. Dabei bin ich stets
+              fokussiert und gehe detailgenau vor. Zudem kann ich gut mit
+              konstruktiver Kritik umgehen und arbeite stets daran mich
+              weiterzubilden. <br /><br />
               An der Fachoberschule konnte ich mir im Bereich Gestaltung viel
               Wissen aneignen, das ich jetzt an der MiB Akademie vertiefen und
               in Praxisprojekten anwenden konnte. Außerdem habe ich dort gelernt
               effizient in kleinen Gruppen zu arbeiten. <br /><br />
             </div>
-            <img
-              src="img/signature.png"
-              alt="Unterschrieben von Christoph Heigl"
-              class="signature"
-            />
           </div>
         </div>
       </div>
 
       <div class="flex w-full flex-wrap">
         <div
-          class="order-sm-2 center-content relative flex w-full bg-dark-background md:w-2/3"
+          class="relative order-2 flex w-full items-center justify-center bg-dark-background md:order-none md:w-2/3"
         >
-          <div
-            class="timeline-container p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28"
-          >
-            <ul class="timeline-holder">
-              <li class="timeline-event">
-                <span class="timeline-circle"></span>
-                <div class="timeline-event-content">
+          <div class="p-8 xs:py-14 md:p-16 lg:px-32 lg:py-28">
+            <ul class="m-0 p-0 translate-z-0 xs:pl-[160px] lg:pl-[125px]">
+              <li
+                class="group relative mb-10 ml-0 list-none before:absolute before:-left-[22px] before:top-[44px] before:hidden before:h-[calc(100%_-_20px)] before:w-[3px] before:bg-dark-green before:content-[''] last:mb-0 last:before:hidden motion-safe:duration-300 sm:ml-16 sm:before:block"
+              >
+                <span
+                  class="absolute -left-[25px] -top-[15px] hidden before:absolute before:-left-[13px] before:top-[11px] before:z-[1] before:block before:h-[35px] before:w-[35px] before:rounded-[90%] before:border-[3px] before:border-solid before:border-dark-green before:content-[''] after:absolute after:-left-[5px] after:top-[19px] after:h-[19px] after:w-[19px] after:rounded-[90%] after:bg-dark-green after:opacity-0 after:content-[''] group-hover:after:opacity-100 before:motion-safe:duration-300 after:motion-safe:transition-opacity after:motion-safe:duration-300 sm:inline"
+                ></span>
+                <div class="ml-0 text-left xs:ml-[42px]">
                   <div class="mb-3 font-bold leading-normal xs:mb-0">
                     Ausbildung zum Mediengestalter
                   </div>
-                  <span class="main-text"
-                    >an der MiB-Akademie in München. Abschluss vorraussichtlich
-                    im Herbst 2025.</span
-                  >
+                  <span class="leading-6">
+                    an der MiB-Akademie in München.
+                  </span>
                 </div>
-                <div class="timeline-event-date">Seit Oktober 2022</div>
+                <div
+                  class="absolute font-bold text-dark-green motion-safe:duration-300 xs:left-[15px] xs:top-0 xs:-translate-x-[100%] xs:group-hover:left-[10px] sm:-left-[70px] sm:group-hover:-left-[80px]"
+                >
+                  Seit Oktober 2022
+                </div>
               </li>
-              <li class="timeline-event">
-                <span class="timeline-circle"></span>
-                <div class="timeline-event-content">
+              <li
+                class="group relative mb-10 ml-0 list-none pt-6 before:absolute before:-left-[22px] before:top-[44px] before:hidden before:h-[calc(100%_-_20px)] before:w-[3px] before:bg-dark-green before:content-[''] last:mb-0 last:before:hidden motion-safe:duration-300 xs:pt-0 sm:ml-16 sm:before:block"
+              >
+                <span
+                  class="absolute -left-[25px] -top-[15px] hidden before:absolute before:-left-[13px] before:top-[11px] before:z-[1] before:block before:h-[35px] before:w-[35px] before:rounded-[90%] before:border-[3px] before:border-solid before:border-dark-green before:content-[''] after:absolute after:-left-[5px] after:top-[19px] after:h-[19px] after:w-[19px] after:rounded-[90%] after:bg-dark-green after:opacity-0 after:content-[''] group-hover:after:opacity-100 before:motion-safe:duration-300 after:motion-safe:transition-opacity after:motion-safe:duration-300 sm:inline"
+                ></span>
+                <div class="ml-0 text-left xs:ml-[42px]">
                   <div class="mb-3 font-bold leading-normal xs:mb-0">
                     Ausbildung zum Erzieher
                   </div>
-                  <span class="main-text"
-                    >an der Fachschule für Sozialpädagogik in Stuttgart.
-                    Vorzeitig beendet.</span
-                  >
+                  <span class="leading-6">
+                    an der Fachschule für Sozialpädagogik in Stuttgart.
+                    Vorzeitig beendet.
+                  </span>
                 </div>
-                <div class="timeline-event-date">09.2020 bis 05.2021</div>
+                <div
+                  class="absolute font-bold text-dark-green motion-safe:duration-300 xs:left-[15px] xs:top-0 xs:-translate-x-[100%] xs:group-hover:left-[10px] sm:-left-[70px] sm:group-hover:-left-[80px]"
+                >
+                  09.2020 bis 05.2021
+                </div>
               </li>
-              <li class="timeline-event">
-                <span class="timeline-circle"></span>
-                <div class="timeline-event-content">
+              <li
+                class="group relative mb-10 ml-0 list-none pt-6 before:absolute before:-left-[22px] before:top-[44px] before:hidden before:h-[calc(100%_-_20px)] before:w-[3px] before:bg-dark-green before:content-[''] last:mb-0 last:before:hidden motion-safe:duration-300 xs:pt-0 sm:ml-16 sm:before:block"
+              >
+                <span
+                  class="absolute -left-[25px] -top-[15px] hidden before:absolute before:-left-[13px] before:top-[11px] before:z-[1] before:block before:h-[35px] before:w-[35px] before:rounded-[90%] before:border-[3px] before:border-solid before:border-dark-green before:content-[''] after:absolute after:-left-[5px] after:top-[19px] after:h-[19px] after:w-[19px] after:rounded-[90%] after:bg-dark-green after:opacity-0 after:content-[''] group-hover:after:opacity-100 before:motion-safe:duration-300 after:motion-safe:transition-opacity after:motion-safe:duration-300 sm:inline"
+                ></span>
+                <div class="ml-0 text-left xs:ml-[42px]">
                   <div class="mb-3 font-bold leading-normal xs:mb-0">
                     Bundesfreiwilligendienst
                   </div>
-                  <span class="main-text"
-                    >im Kindergarten St. Joseph in Deggendorf.</span
-                  >
+                  <span class="leading-6">
+                    im Kindergarten in Deggendorf.
+                  </span>
                 </div>
-                <div class="timeline-event-date">10.2019 bis 07.2020</div>
+                <div
+                  class="absolute font-bold text-dark-green motion-safe:duration-300 xs:left-[15px] xs:top-0 xs:-translate-x-[100%] xs:group-hover:left-[10px] sm:-left-[70px] sm:group-hover:-left-[80px]"
+                >
+                  10.2019 bis 07.2020
+                </div>
               </li>
-              <li class="timeline-event">
-                <span class="timeline-circle"></span>
-                <div class="timeline-event-content">
+              <li
+                class="group relative mb-10 ml-0 list-none pb-6 pt-6 before:absolute before:-left-[22px] before:top-[44px] before:hidden before:h-[calc(100%_-_20px)] before:w-[3px] before:bg-dark-green before:content-[''] last:mb-0 last:before:hidden motion-safe:duration-300 xs:pb-0 xs:pt-0 sm:ml-16 sm:before:block"
+              >
+                <span
+                  class="absolute -left-[25px] -top-[15px] hidden before:absolute before:-left-[13px] before:top-[11px] before:z-[1] before:block before:h-[35px] before:w-[35px] before:rounded-[90%] before:border-[3px] before:border-solid before:border-dark-green before:content-[''] after:absolute after:-left-[5px] after:top-[19px] after:h-[19px] after:w-[19px] after:rounded-[90%] after:bg-dark-green after:opacity-0 after:content-[''] group-hover:after:opacity-100 before:motion-safe:duration-300 after:motion-safe:transition-opacity after:motion-safe:duration-300 sm:inline"
+                ></span>
+                <div class="ml-0 text-left xs:ml-[42px]">
                   <div class="mb-3 font-bold leading-normal xs:mb-0">
                     Fachoberschule
                   </div>
-                  <span class="main-text">
+                  <span class="leading-6">
                     im Bereich Gestaltung in Straubing. <br />Abschluss:
-                    Fachhochschulreife.</span
-                  >
+                    Fachhochschulreife.
+                  </span>
                 </div>
-                <div class="timeline-event-date">09.2017 bis 07.2019</div>
+                <div
+                  class="absolute font-bold text-dark-green motion-safe:duration-300 xs:left-[15px] xs:top-0 xs:-translate-x-[100%] xs:group-hover:left-[10px] sm:-left-[70px] sm:group-hover:-left-[80px]"
+                >
+                  09.2017 bis 07.2019
+                </div>
               </li>
             </ul>
           </div>
         </div>
         <div
-          class="center-content elementheight relative flex w-full bg-dark-green md:w-1/3"
+          class="flex h-[120px] max-h-[250px] w-full items-center justify-start bg-dark-green px-8 xs:px-12 sm:px-14 md:relative md:h-[180px] md:max-h-[120px] md:w-1/3 md:justify-center xl:h-auto xl:max-h-[180px]"
         >
-          <h2 class="font-display text-background">Werdegang</h2>
+          <h2
+            class="font-display text-[2rem] font-normal text-background md:text-[2.5rem] xl:text-[3rem]"
+          >
+            Werdegang
+          </h2>
         </div>
       </div>
 
       <div class="flex w-full flex-wrap">
         <div
-          class="center-content elementheight relative flex w-full bg-wall md:w-1/3"
+          class="flex h-[120px] max-h-[250px] w-full items-center justify-start bg-wall px-8 xs:px-12 sm:px-14 md:relative md:h-[180px] md:max-h-[120px] md:w-1/3 md:justify-center xl:h-auto xl:max-h-[180px]"
         >
-          <h2 class="font-display text-background">Portfolio</h2>
+          <h2
+            class="font-display text-[2rem] font-normal text-background md:text-[2.5rem] xl:text-[3rem]"
+          >
+            Portfolio
+          </h2>
         </div>
-        <div class="relative flex w-full bg-light-background md:w-1/3">
+        <div
+          id="passwordArea"
+          class="relative flex w-full bg-light-background md:w-2/3"
+        >
+          <div
+            class="w-full p-8 xs:p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28"
+          >
+            Um Zugriff zum Portfolio zu erlangen, geben Sie bitte das Passwort
+            ein:<br />
+            <form>
+              <input
+                type="password"
+                name="password"
+                placeholder="Passwort"
+                class="mt-1 block w-full border-none font-sans shadow-sm focus:ring focus:ring-dark-green focus:ring-opacity-50"
+                required
+              /><br />
+            </form>
+            <button
+              type="button"
+              class="mt-2 bg-dark-green px-4 py-2 font-display text-background"
+              onclick="validatePassword()"
+            >
+              Absenden
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item relative flex w-full bg-light-background md:w-1/3"
+          style="display: none"
+        >
           <a
             href="portfolio/Webseite_Theater_im_Parkett/index.html"
             class="group relative w-full overflow-hidden hover:translate-y-0"
@@ -182,7 +289,10 @@
           </a>
         </div>
 
-        <div class="relative flex w-full bg-light-background md:w-1/3">
+        <div
+          class="portfolio-item relative flex w-full bg-light-background md:w-1/3"
+          style="display: none"
+        >
           <a
             href="portfolio/Gruenkram_Broschuere.pdf"
             class="group relative w-full overflow-hidden hover:translate-y-0"
@@ -202,10 +312,10 @@
 
       <div class="flex w-full flex-wrap">
         <div
-          class="order-sm-2 relative flex w-full bg-light-background md:w-2/3"
+          class="relative order-2 flex w-full bg-dark-background md:order-none md:w-2/3"
         >
-          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
-            <span class="main-text">
+          <div class="p-8 xs:p-12 sm:p-14 md:p-16 lg:px-32 lg:py-28">
+            <span class="leading-6">
               <p class="mb-2">
                 <span class="font-bold leading-normal">Adobe-Programme:</span
                 ><br />
@@ -216,7 +326,7 @@
                 <span class="font-bold leading-normal">Webseiten:</span><br />
                 Grundlagen in HTML, CSS, PHP, MySQL, JavaScript
               </p>
-              <p>
+              <p class="mb-0">
                 <span class="font-bold leading-normal">Sonstiges:</span><br />
                 Grundlagen im Erstellen von Konzeptionen, typografischer
                 Gestaltung, Erstellen von Styleguides
@@ -225,33 +335,18 @@
           </div>
         </div>
         <div
-          class="elementheight center-content relative flex w-full bg-pullover md:w-1/3"
+          class="flex h-[120px] max-h-[250px] w-full items-center justify-start bg-pullover px-8 xs:px-12 sm:px-14 md:relative md:h-[180px] md:max-h-[120px] md:w-1/3 md:justify-center xl:h-auto xl:max-h-[180px]"
         >
-          <h2 class="font-display text-background">Fähigkeiten</h2>
-        </div>
-      </div>
-
-      <div class="flex w-full flex-wrap">
-        <div
-          class="elementheight center-content relative flex w-full bg-dark-green md:w-1/3"
-        >
-          <h2 class="font-display text-background">Kontakt</h2>
-        </div>
-        <div class="relative flex w-full bg-dark-background md:w-2/3">
-          <div class="p-12 sm:p-14 md:px-16 md:py-20 lg:px-32 lg:py-28">
-            <span class="main-text">
-              <span class="font-bold leading-normal">E-Mail:</span><br />
-              <a href="mailto:chris-heigl@gmx.de" class="text-pullover">
-                chris-heigl@gmx.de
-              </a>
-              <br /><br />
-            </span>
-          </div>
+          <h2
+            class="font-display text-[2rem] font-normal text-background md:text-[2.5rem] xl:text-[3rem]"
+          >
+            Fähigkeiten
+          </h2>
         </div>
       </div>
     </main>
     <footer class="p-8 text-center xl:px-8 xl:pb-16 xl:pt-24">
-      © 2023 Christoph Heigl
+      <a href="impressum.html">© 2023 Christoph Heigl</a>
     </footer>
   </body>
 </html>
