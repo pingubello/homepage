@@ -933,10 +933,6 @@ select {
   margin-left: 0.5rem;
 }
 
-.mr-\[5px\] {
-  margin-right: 5px;
-}
-
 .mt-0 {
   margin-top: 0px;
 }
@@ -955,10 +951,6 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-\[35px\] {
-  margin-top: 35px;
 }
 
 .box-border {
@@ -1084,10 +1076,6 @@ select {
   height: 400px;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[calc\(66vh_-_60px\)\] {
   height: calc(66vh - 60px);
 }
@@ -1098,10 +1086,6 @@ select {
 
 .w-1 {
   width: 0.25rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-full {
@@ -1334,10 +1318,6 @@ select {
 
 .list-none {
   list-style-type: none;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .appearance-none {
@@ -2308,10 +2288,6 @@ select {
   padding: 0.25rem;
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -2331,14 +2307,19 @@ select {
   padding-right: 2.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-\[1\.5rem\] {
@@ -2351,6 +2332,11 @@ select {
   padding-bottom: 3rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2359,21 +2345,6 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-6 {
@@ -2395,18 +2366,6 @@ select {
 
 .pt-\[1\.5rem\] {
   padding-top: 1.5rem;
-}
-
-.pl-\[10px\] {
-  padding-left: 10px;
-}
-
-.pl-\[15px\] {
-  padding-left: 15px;
-}
-
-.pl-\[14px\] {
-  padding-left: 14px;
 }
 
 .text-left {
@@ -2471,10 +2430,6 @@ select {
 
 .font-sans {
   font-family: Tajawal, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -2597,22 +2552,6 @@ select {
   line-height: 1.25;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
-.leading-loose {
-  line-height: 2;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
 .tracking-\[5px\] {
   letter-spacing: 5px;
 }
@@ -2669,11 +2608,6 @@ select {
 .text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3452,19 +3386,14 @@ select {
     padding: 3rem;
   }
 
-  .xs\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .xs\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .xs\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-  }
-
-  .xs\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .xs\:pb-0 {
@@ -3481,26 +3410,6 @@ select {
 
   .xs\:text-\[3\.5rem\] {
     font-size: 3.5rem;
-  }
-
-  .selection\:xs\:px-12 *::-moz-selection {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .selection\:xs\:px-12 *::selection {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .selection\:xs\:px-12::-moz-selection {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .selection\:xs\:px-12::selection {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .group:hover .xs\:group-hover\:left-\[10px\] {
@@ -3565,14 +3474,6 @@ select {
     height: 180px;
   }
 
-  .md\:h-\[740px\] {
-    height: 740px;
-  }
-
-  .md\:h-\[780px\] {
-    height: 780px;
-  }
-
   .md\:h-auto {
     height: auto;
   }
@@ -3615,11 +3516,6 @@ select {
     padding-bottom: 5rem;
   }
 
-  .md\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
   .md\:text-\[2\.5rem\] {
     font-size: 2.5rem;
   }
@@ -3630,10 +3526,6 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-auto {
-    height: auto;
-  }
-
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -3676,14 +3568,6 @@ select {
 
   .xl\:top-0 {
     top: 0px;
-  }
-
-  .xl\:top-\[300px\] {
-    top: 300px;
-  }
-
-  .xl\:top-\[280px\] {
-    top: 280px;
   }
 
   .xl\:top-\[282px\] {
