@@ -2174,6 +2174,14 @@ select {
   background-image: url('../img/Wochenkalender.png');
 }
 
+.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-10-20\.jpg\'\)\] {
+  background-image: url('../img/Sympathietraeger_2023-10-20.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-12-05\.jpg\'\)\] {
+  background-image: url('../img/Sympathietraeger_2023-12-05.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
