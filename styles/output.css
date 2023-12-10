@@ -2150,12 +2150,12 @@ select {
   background-image: url('../img/Gruenkram.png');
 }
 
-.bg-\[url\(\'\.\.\/img\/Sympathietra\308ger_2023-12-05\.jpg\'\)\] {
-  background-image: url('../img/Sympathieträger_2023-12-05.jpg');
+.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-10-20\.jpg\'\)\] {
+  background-image: url('../img/Sympathietraeger_2023-10-20.jpg');
 }
 
-.bg-\[url\(\'\.\.\/img\/Sympathietr\E4ger_2023-10-20\.jpg\'\)\] {
-  background-image: url('../img/Sympathieträger_2023-10-20.jpg');
+.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-12-05\.jpg\'\)\] {
+  background-image: url('../img/Sympathietraeger_2023-12-05.jpg');
 }
 
 .bg-\[url\(\'\.\.\/img\/Visitenkarte\.png\'\)\] {
@@ -2166,20 +2166,12 @@ select {
   background-image: url('../img/Website_TiP.jpg');
 }
 
-.bg-\[url\(\'\.\.\/img\/bild1\.webp\'\)\] {
-  background-image: url('../img/bild1.webp');
-}
-
 .bg-\[url\(\'\.\.\/img\/Wochenkalender\.png\'\)\] {
   background-image: url('../img/Wochenkalender.png');
 }
 
-.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-10-20\.jpg\'\)\] {
-  background-image: url('../img/Sympathietraeger_2023-10-20.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/Sympathietraeger_2023-12-05\.jpg\'\)\] {
-  background-image: url('../img/Sympathietraeger_2023-12-05.jpg');
+.bg-\[url\(\'\.\.\/img\/bild1\.webp\'\)\] {
+  background-image: url('../img/bild1.webp');
 }
 
 .decoration-slice {
