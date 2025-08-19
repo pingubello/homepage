@@ -2146,6 +2146,10 @@ select {
   background-color: rgb(133 139 130 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/img\/Flyer_WH\.png\'\)\] {
+  background-image: url('../img/Flyer_WH.png');
+}
+
 .bg-\[url\(\'\.\.\/img\/Gruenkram\.png\'\)\] {
   background-image: url('../img/Gruenkram.png');
 }
@@ -2158,16 +2162,12 @@ select {
   background-image: url('../img/Sympathietraeger_2023-12-05.jpg');
 }
 
-.bg-\[url\(\'\.\.\/img\/Visitenkarte\.png\'\)\] {
-  background-image: url('../img/Visitenkarte.png');
+.bg-\[url\(\'\.\.\/img\/Visitenkarte_WH\.png\'\)\] {
+  background-image: url('../img/Visitenkarte_WH.png');
 }
 
 .bg-\[url\(\'\.\.\/img\/Website_TiP\.jpg\'\)\] {
   background-image: url('../img/Website_TiP.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/Wochenkalender\.png\'\)\] {
-  background-image: url('../img/Wochenkalender.png');
 }
 
 .bg-\[url\(\'\.\.\/img\/bild1\.webp\'\)\] {
